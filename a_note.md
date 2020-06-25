@@ -57,6 +57,12 @@ $$ \log RT = \beta_0 + (\beta_1 + \beta_2) \cdot\log{P(w)} + \beta_2 \cdot \left
 Because the effect of word frequencies is so large and stable, $w_\text{prev}$ frequency will tend to dominate BTP, and therefore the coefficient $\beta_2$ will be negative. At the same time, because $\beta_2$ is negative, $\beta_1$ will be inflated making the effect of $w$ frequency seem larger than it is.
 
 
+![Joint distribution of first and last word frequencies for bigrams.](figures/word1_word2_hexplot.pdf)
+
+
+![Joint distribution of forward and backward transitional probabilities for bigrams.](figures/ftp_btp_hexplot.pdf)
+
+
 ## On making theoretically motivated choices
 Mathematically exchangeable entities are convenient because they allow us to chose the formulation that is most convenient for us to work with. They are however also problematic because there is no reason to assume that the mind and brain use the same formulation that we do. Naive methods stand no chance of distinguishing between the different accounts, due to issues such as correlation and multicollinearity (see e.g. [Levy, 2008](https://doi.org/10.1016/j.cognition.2007.05.006), for a footnote on how FTP/BTP correlation complicates predictor selection). The psychological or neurobiological implementation matters, but we are not able to determine that from these measures alone. Instead, we have to look for fundamental structural reasons why one representation would be more compatible with other structures and mechanisms, such as neural connectivity, much the same way that arguments about frequency versus time domain representation in M/EEG are resolved by proposing fundamental mechanisms and not by computing the Fourier transform.
 
